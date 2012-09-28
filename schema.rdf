@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:artint="http://artisanalintegers.com/schema.rdf#">
+
+  <rdfs:Class rdf:about="artint:integer">
+    <rdfs:label xml:lang="en">An Artisanal Integer</rdfs:label>
+    <rdfs:comment>The permalink representing an Artisanal Integer</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="rdfs:Resource"/>
+  </rdfs:Class>
+
+  <rdf:Property rdf:about="artint:value">
+    <rdfs:domain rdf:resource="artint:integer"/>
+    <rdfs:label xml:lang="en">An Artisanal Integer (literal)</rdfs:label>
+    <rdfs:comment>The unsigned 64-bit Artisanal Integer value</rdfs:comment>
+    <rdfs:range rdf:resource="rdfs:Literal"/>
+  </rdf:Property>
+
+  <rdf:Property rdf:about="artint:claims">
+    <rdfs:label xml:lang="en">Claiming an Artisanal Integer</rdfs:label>
+    <rdfs:comment>When you use an Artisanal Integer and want to announce that.</rdfs:comment>
+  </rdf:Property>
+</rdf:RDF>
